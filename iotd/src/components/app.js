@@ -1,6 +1,26 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-export default class PortfolioItem extends Component {
-  
+class App extends React.Component {
+  render() {
+
+    return (
+      <Router>
+        <div
+          style={{
+            display: 'flex',
+            minHeight: '100vh',
+            flexDirection: 'column',
+          }}
+        >
+        </div>
+      </Router>
+    );
+  }
 }
+
+
+
+export default (App);
