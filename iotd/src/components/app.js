@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 
 class App extends React.Component {
   render() {
+    const { polls, user } = this.props;
 
     return (
       <Router>
@@ -20,7 +21,5 @@ class App extends React.Component {
     );
   }
 }
-
-
 
 export default (App);
